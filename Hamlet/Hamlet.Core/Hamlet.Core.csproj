@@ -1,7 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Hamlet</Title>
+        <Authors>Philip Laureano</Authors>
+        <Description>A reusable library for working with Akka.NET actors and actor systems.</Description>
+        <PackageProjectUrl>https://github.com/philiplaureano/hamlet</PackageProjectUrl>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/philiplaureano/hamlet</RepositoryUrl>
+        <PackageTags>akka csharp distributed</PackageTags>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Akka" Version="1.3.13" />
+      <PackageReference Include="LinFu.Loaders" Version="3.1.0" />
+    </ItemGroup>
 
 </Project>
